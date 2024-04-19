@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Dynamic Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Dynamic Form` is a reusable React component for creating customizable forms. It supports various data types such as text, number, date, time, phone, URL, and range. The component allows users to add new form fields dynamically and perform validation on input fields.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Multiple data types: The component supports different input types including text, number, date, time, phone, URL, and range.
+- Dynamic field addition: Users can add new form fields with different data types, names, and values.
+- Input validation: Form fields are validated based on their data type to ensure data integrity.
+- Reusable: The component can be easily integrated into other projects as a reusable form.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: A popular JavaScript library for building user interfaces. The application uses React functional components and hooks (`useState` and `useEffect`) for managing state and side effects.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **CSS**: Cascading Style Sheets are used to style the components and improve the overall user experience. CSS files are imported into the components for styling.
 
-### `npm test`
+- **Fetch API**: The Fetch API is a native JavaScript interface for making HTTP requests. It is used to fetch data from the server and submit data from forms.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Component-based Architecture**: The project follows a component-based architecture, separating different functionalities into individual components (`FormComponent` and `DisplayDataComponent`) for modularity and maintainability.
 
-### `npm run build`
+- **Functional Components**: The application uses functional components in React. These components are stateless and rely on hooks to manage state.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Conditional Rendering**: Conditional rendering is used in `DisplayDataComponent` to display different content based on the state of the data (e.g., showing submitted data or a message indicating no data is available).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Form Handling and Validation**: The application handles form inputs, including validation for fields like email and password. Error messages are displayed when validation fails.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Local Server**: The application fetches and submits data to a local server running on `http://localhost:3001/formData`. The server is expected to be running separately and serving data to the application.
 
-### `npm run eject`
+- **Dynamic Form Fields**: The `FormComponent` allows users to dynamically add new form fields based on selected data types (e.g., `text`, `tel`, `website`, `date`, `time`, `range`).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+By leveraging these technologies, the application provides a robust and interactive experience for handling and displaying data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Deployed Link
+https://6622d8db1f63a433ade9cf7d--prismatic-halva-a55ef2.netlify.app/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Laptop view
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screenshot 2024-04-20 030419](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/2c287263-e994-4bcd-a379-58c7357ebc8a)
+![Screenshot 2024-04-20 024822](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/dd609f89-13cc-4b14-a1e3-334b4224659b)
+![Screenshot 2024-04-20 025642](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/6361bbbf-96ca-434f-92ca-e20d60f5815c)
 
-## Learn More
+# Tablet view
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Screenshot 2024-04-20 025218](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/6ec4981b-f162-4f77-ac42-a8fb0e8b6fa7)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Mobile view
 
-### Code Splitting
+![Screenshot 2024-04-20 024645](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/2a4576d6-2dc1-4ef3-8d9a-af2dbdf15fd1)
+![Screenshot 2024-04-20 023058](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/9366e9c7-5e84-4e26-ac69-871e57179ed1)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
