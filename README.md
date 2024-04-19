@@ -19,12 +19,6 @@
 
 - **Component-based Architecture**: The project follows a component-based architecture, separating different functionalities into individual components (`FormComponent` and `DisplayDataComponent`) for modularity and maintainability.
 
-- **Functional Components**: The application uses functional components in React. These components are stateless and rely on hooks to manage state.
-
-- **Conditional Rendering**: Conditional rendering is used in `DisplayDataComponent` to display different content based on the state of the data (e.g., showing submitted data or a message indicating no data is available).
-
-- **Form Handling and Validation**: The application handles form inputs, including validation for fields like email and password. Error messages are displayed when validation fails.
-
 - **Local Server**: The application fetches and submits data to a local server running on `http://localhost:3001/formData`. The server is expected to be running separately and serving data to the application.
 
 - **Dynamic Form Fields**: The `FormComponent` allows users to dynamically add new form fields based on selected data types (e.g., `text`, `tel`, `website`, `date`, `time`, `range`).
@@ -36,18 +30,18 @@ https://6622d8db1f63a433ade9cf7d--prismatic-halva-a55ef2.netlify.app/
 
 # Laptop view
 
-![Screenshot 2024-04-20 030419](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/2c287263-e994-4bcd-a379-58c7357ebc8a)
-![Screenshot 2024-04-20 024822](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/dd609f89-13cc-4b14-a1e3-334b4224659b)
-![Screenshot 2024-04-20 025642](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/6361bbbf-96ca-434f-92ca-e20d60f5815c)
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/2c287263-e994-4bcd-a379-58c7357ebc8a" width="1000" alt="Laptop View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/dd609f89-13cc-4b14-a1e3-334b4224659b" width="1000" alt="Laptop View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/6361bbbf-96ca-434f-92ca-e20d60f5815c" width="1000" alt="Laptop View Screenshot">
 
 # Tablet view
 
-![Screenshot 2024-04-20 025218](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/6ec4981b-f162-4f77-ac42-a8fb0e8b6fa7)
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/6ec4981b-f162-4f77-ac42-a8fb0e8b6fa7" width="500" alt="Tablet View Screenshot">
 
 # Mobile view
 
-![Screenshot 2024-04-20 024645](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/2a4576d6-2dc1-4ef3-8d9a-af2dbdf15fd1)
-![Screenshot 2024-04-20 023058](https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/9366e9c7-5e84-4e26-ac69-871e57179ed1)
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/2a4576d6-2dc1-4ef3-8d9a-af2dbdf15fd1" width="300" alt="Mobile View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/9366e9c7-5e84-4e26-ac69-871e57179ed1" width="300" alt="Mobile View Screenshot">
 
 
 
