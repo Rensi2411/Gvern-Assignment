@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid'; // Import uuidv4 from uuid
 import '../css/FormComponent.css';
 
 function FormComponent() {
     // Initial state for form fields
     const initialState = [
-        { name: 'name', label: 'Name', value: '', type: 'text', error: '' },
-        { name: 'email', label: 'Email', value: '', type: 'email', error: '' },
-        { name: 'password', label: 'Password', value: '', type: 'password', error: '' },
+        { id: uuidv4(), name: 'name', label: 'Name', value: '', type: 'text', error: '' },
+        { id: uuidv4(), name: 'email', label: 'Email', value: '', type: 'email', error: '' },
+        { id: uuidv4(), name: 'password', label: 'Password', value: '', type: 'password', error: '' },
     ];
 
     const [fields, setFields] = useState(initialState);
@@ -14,11 +15,11 @@ function FormComponent() {
     const [smallFormData, setSmallFormData] = useState({ dataType: 'text', name: '', value: '', error: '' });
 
     // Handle changes in form fields
-    const handleChange = (index, event) => {
+    const handleChange = (id, event) => { 
         const { name, value } = event.target;
-        const updatedFields = [...fields];
-        updatedFields[index].value = value;
-        validateField(updatedFields[index]);
+        const updatedFields = fields.map(field =>
+            field.id === id ? { ...field, value: value } : field
+        );
         setFields(updatedFields);
     };
 
@@ -40,22 +41,19 @@ function FormComponent() {
                 error = 'Name can only contain letters and spaces.';
             }
         }
-        field.error = error;
+        return error;
     };
 
     // Handle form submission
     const handleSubmit = async (event) => {
         event.preventDefault();
-        let valid = true;
-        const updatedFields = fields.map((field) => {
-            validateField(field);
-            if (field.error) {
-                valid = false;
-            }
-            return field;
+        const updatedFields = fields.map(field => {
+            const error = validateField(field);
+            return { ...field, error: error };
         });
 
-        if (!valid) {
+        const hasErrors = updatedFields.some(field => field.error);
+        if (hasErrors) {
             setFields(updatedFields);
             return;
         }
@@ -103,6 +101,7 @@ function FormComponent() {
         }
 
         const newField = {
+            id: uuidv4(), 
             name: smallFormData.name,
             label: smallFormData.name,
             value: smallFormData.value,
@@ -120,20 +119,20 @@ function FormComponent() {
         <div>
             <form onSubmit={handleSubmit}>
                 {/* Render form fields */}
-                {fields.map((field, index) => (
-                    <div key={field.name}>
-                        <label htmlFor={field.name}>{field.label}:</label>
+                {fields.map((field) => (
+                    <div key={field.id}> 
+                        <label htmlFor={field.id}>{field.label}:</label>
                         <input
                             type={field.type}
-                            id={field.name}
+                            id={field.id}
                             name={field.name}
                             value={field.value}
-                            onChange={(e) => handleChange(index, e)}
+                            onChange={(e) => handleChange(field.id, e)}
                         />
                         {field.error && <span style={{ color: 'red' }}>{field.error}</span>}
                     </div>
                 ))}
-                <button type="button" onClick={() => setShowSmallForm(true)}>Add Field</button>
+                <button type="button" onClick={() => setShowSmallForm(true)}>Add Additional Field</button>
                 <button type="submit">Submit</button>
             </form>
 
@@ -151,7 +150,7 @@ function FormComponent() {
                         <option value="range">Range</option>
                     </select>
 
-                    <label htmlFor="name">Name:</label>
+                    <label htmlFor="name">Field Name:</label>
                     <input type="text" id="name" name="name" value={smallFormData.name} onChange={handleSmallFormChange} />
 
                     {/* Value input */}

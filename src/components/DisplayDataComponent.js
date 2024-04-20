@@ -25,6 +25,11 @@ function DisplayDataComponent() {
         return () => clearInterval(intervalId); // Clean up interval on unmount
     }, []);
 
+    // Function to replace password with asterisks
+    const hidePassword = (password) => {
+        return '*'.repeat(password.length);
+    };
+
     // Render submitted data
     return (
         <div>
@@ -37,14 +42,14 @@ function DisplayDataComponent() {
                                 .filter(([key, _]) => key !== 'id') // Exclude 'id' from rendering
                                 .map(([key, value]) => (
                                     <div key={key}>
-                                        <strong>{key}:</strong> {value}
+                                        <strong>{key === 'password' ? 'Password' : key}:</strong> {key === 'password' ? hidePassword(value) : value}
                                     </div>
                                 ))}
                         </li>
                     ))}
                 </ul>
             ) : (
-                <p>No data submitted yet.</p>
+                <p>No data found.</p>
             )}
         </div>
     );
