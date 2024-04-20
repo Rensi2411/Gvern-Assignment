@@ -29,6 +29,9 @@
 
 By leveraging these technologies, the application provides a robust and interactive experience for handling and displaying data.
 
+# Demo video
+https://drive.google.com/file/d/1ljcTD-zmd3AGcCEJkXruGH7A3EzWrFuc/view?usp=sharing
+
 # Laptop view
 
 <img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/d801ef68-dcfd-4673-b8fc-fc5dce0e1d60" width="900" alt="Laptop View Screenshot">
