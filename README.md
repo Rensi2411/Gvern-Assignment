@@ -25,9 +25,6 @@
 
 By leveraging these technologies, the application provides a robust and interactive experience for handling and displaying data.
 
-# Deployed Link
-https://6622d8db1f63a433ade9cf7d--prismatic-halva-a55ef2.netlify.app/
-
 # Laptop view
 
 <img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/2c287263-e994-4bcd-a379-58c7357ebc8a" width="1000" alt="Laptop View Screenshot">
