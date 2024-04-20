@@ -4,10 +4,14 @@
 
 ## Features
 
-- Multiple data types: The component supports different input types including text, number, date, time, phone, URL, and range.
-- Dynamic field addition: Users can add new form fields with different data types, names, and values.
-- Input validation: Form fields are validated based on their data type to ensure data integrity.
-- Reusable: The component can be easily integrated into other projects as a reusable form.
+- **Multiple data types**: The component supports different input types including text, number, date, time, phone, URL, and range.
+- **Dynamic field addition**: Users can add new form fields with different data types,field names, and values.
+- **Input validation**: Form fields are validated based on their data type to ensure data integrity.
+- **Reusable**: The component can be easily integrated into other projects as a reusable form.
+- **Responsive Design**: Ensure full responsiveness for seamless user experience across different screen sizes.
+- **Enhanced Validation**: Improve error handling and provide detailed error messages for input fields.
+- **Customizable Labels**: Enable users to customize labels for each form field.
+- **Error Handling**: Implement robust error handling for fetch requests and form submissions.
 
 ## Technologies Used
 
@@ -27,18 +31,19 @@ By leveraging these technologies, the application provides a robust and interact
 
 # Laptop view
 
-<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/2c287263-e994-4bcd-a379-58c7357ebc8a" width="1000" alt="Laptop View Screenshot">
-<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/dd609f89-13cc-4b14-a1e3-334b4224659b" width="1000" alt="Laptop View Screenshot">
-<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/6361bbbf-96ca-434f-92ca-e20d60f5815c" width="1000" alt="Laptop View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/d801ef68-dcfd-4673-b8fc-fc5dce0e1d60" width="900" alt="Laptop View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/8f20c7e3-bffb-45c4-9a9a-548eb80c88b6" width="900" alt="Laptop View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/59672bd5-88fa-4c0d-be61-17f776ced14c" width="900" alt="Laptop View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/d509c9f8-48a8-4cd7-9857-a63bd8a674a8" width="900" alt="Laptop View Screenshot">
 
 # Tablet view
 
-<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/6ec4981b-f162-4f77-ac42-a8fb0e8b6fa7" width="500" alt="Tablet View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/cffd46c4-ef89-4188-bc3b-c4731903424b" width="400" alt="Tablet View Screenshot">
 
 # Mobile view
 
-<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/2a4576d6-2dc1-4ef3-8d9a-af2dbdf15fd1" width="300" alt="Mobile View Screenshot">
-<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/9366e9c7-5e84-4e26-ac69-871e57179ed1" width="300" alt="Mobile View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/19e54ac8-212f-4d52-998f-69a0675cafa2" width="300" alt="Mobile View Screenshot">
+<img src="https://github.com/Rensi2411/Gvern-Assignment/assets/131978061/fb805aed-186d-42ff-88ac-8ffc608cc64f" width="300" alt="Mobile View Screenshot">
 
 
 
