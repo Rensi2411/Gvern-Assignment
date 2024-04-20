@@ -30,7 +30,7 @@
 By leveraging these technologies, the application provides a robust and interactive experience for handling and displaying data.
 
 # Demo video
-https://drive.google.com/file/d/1ljcTD-zmd3AGcCEJkXruGH7A3EzWrFuc/view?usp=sharing
+https://drive.google.com/file/d/16BVcJHRYusTSO3GqLLiqz2HXf9vkYWUt/view?usp=sharing
 
 # Laptop view
 
